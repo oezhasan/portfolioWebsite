@@ -1,12 +1,14 @@
 const navLinks = document.querySelectorAll(".nav-link");
 const sections = document.querySelectorAll("section");
-
+const darkMode = document.querySelector(".toggle-darkmode")
 
 console.log(sections)
 navLinksArray = Array.from(navLinks)
 sectionsArray = Array.from(sections);
 
-
+darkMode.addEventListener("click", function(){
+    document.body.classList.toggle("dark-mode");
+})
 
 navLinksArray.forEach((link)=>{
 

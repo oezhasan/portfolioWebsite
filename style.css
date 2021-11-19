@@ -4,6 +4,7 @@
     padding:0;
 }
 
+
 :root{
     --ff-primary: 'Source Sans Pro', sans-serif;
     --ff-secondary: 'Source Code Pro', monospace;
@@ -22,13 +23,23 @@
     --fs-body: 1rem;
 }
 
-@media (min-width: 800px) {
+
+@media only screen and (min-width: 768px) {
     :root{
         --fs-h1: 4.5rem;
         --fs-h2: 3.75rem;
         --fs-h3: 1.5rem;
         --fs-body: 1,125rem;
     }
+
+
+
+}
+
+.dark-mode{
+    --clr-light:#303030 ;
+    --clr-dark: #fff;
+
 }
 
 html,body{
@@ -40,6 +51,7 @@ html,body{
     height:100%;
     width:100%;
     scroll-behavior: smooth;  
+    min-width: 800px;
 }
 
 
@@ -52,7 +64,9 @@ html,body{
 }
 
 section{
-    padding: 100px 25%;
+    padding: 5rem 25%;
+    background: inherit;
+
 }
 
 h1,h2,h3{
@@ -76,30 +90,48 @@ h3{
 
 /* HEADER */
 
-header{
+.nav{
+    display: flex;
     z-index: 1;
     background: var(--clr-light);
-    text-align: center;
-    padding: 10px;
+    padding: 1rem;
     position: fixed;
     width: 100%;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid red;
+
 }
 
 .nav-links{
-    padding: 10px;
+    padding: 0.5rem;
     width: 50%;
     margin: 0 auto;
     background: var(--clr-grey);
     border-radius: 1.5rem;
-    display: flex
+    display: flex;
+    border: 1px solid red;
 }
 
+.nav-item{
+    text-decoration: none;
+    color: var(--clr-dark);
+    font-weight: var(--fw-bold);
+    margin-right: 2em;
+
+
+}
+.nav-item:hover{
+    text-decoration: none;
+
+
+}
 .nav-link{
     flex: 1 1 0px;
     text-align: center;
     border-radius: 1.5rem;
-    padding: 8px;
-    margin: 2px;
+    padding: 0.5rem;
+    margin: 0.5px;
     text-decoration: none;
     color: var(--clr-dark);
     font-weight: var(--fw-bold);
@@ -108,6 +140,17 @@ header{
 .nav-link-selected{
     background: var(--clr-light);
 }
+
+.toggle-darkmode{
+    background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit
+}
+
 
 /* INTRO */
 .intro{
@@ -120,7 +163,7 @@ header{
     margin: auto;
     width: 50%;
     border: 3px solid var(--clr-dark);
-    padding: 10px;
+    padding: 1rem;
     
 }
 
