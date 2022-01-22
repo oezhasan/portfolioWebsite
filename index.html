@@ -1,146 +1,187 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
+    <div class="star-bg">
+      <div id="stars"></div>
+      <div id="stars2"></div>
+      <div id="stars3"></div>
+    </div>
     <header>
-        <nav class="nav">
-            <div class="nav-links">
-                <a href="#home" class="nav-link nav-link-selected">Home</a>
-                <a href="#projects" class="nav-link">Projekte</a>
-                <a href="#skills" class="nav-link">Skills</a>
-            </div>
-
-            <a class="nav-item" href=""> Lebenslauf </a>
-            <button class="toggle-darkmode">
-                <i class="fas fa-moon"></i>
-            </button>
-
-            
-        </nav>
+      <nav class="nav">
+        <div class="nav-links">
+          <a href="#home" class="nav-link nav-link-selected">Home</a>
+          <a href="#projects" class="nav-link">Projekte</a>
+          <a href="#skills" class="nav-link">Skills</a>
+        </div>
+        <div class="nav-grp-right">
+          <a class="nav-item-right" href=""> Lebenslauf </a>
+          <a class="nav-item-right btn">
+            <i id="toggle-darkmode" class="fas fa-moon"></i>
+          </a>
+        </div>
+      </nav>
     </header>
 
     <!-- Introduction -->
     <section class="intro" id="home">
-        <h1 class="intro_title">
-            Hasan Öz
-        </h1>
+      <h1 class="intro_title">Hasan Öz</h1>
+      <a id="arrow-down" class="btn">
+        <i class="fas fa-arrow-down fa-7x"></i>
+      </a>
     </section>
 
     <!-- Projects -->
     <section class="projects" id="projects">
-        <h2>Projekte</h2>
-        <div class="project-list">
-
-            <div class="project-item">
-                    <h3>Calculator</h3>
-                    <img src="" alt="Calculator-Image"><br>
-                    <button class="github-link btn btn-light" onclick="location.href='http://www.example.com'" >
-                        View Code   <i class="fab fa-github fa-1x"></i>
-                    </button>    
-            </div>
-
-            <div class="project-item">
-                <h3>Calculator</h3>
-                    <img src="" alt="Calculator-Image"><br>
-                    <button class="github-link btn btn-light" onclick="location.href='http://www.example.com'" >
-                        View Code   <i class="fab fa-github fa-1x"></i>
-                    </button>    
-
-            </div>
-
-            <div class="project-item">
-                <h3>Calculator</h3>
-                    <img src="" alt="Calculator-Image"><br>
-                    <button class="github-link btn btn-light" onclick="location.href='http://www.example.com'" >
-                        View Code   <i class="fab fa-github fa-1x"></i>
-                    </button>    
-            </div>
-            <div class="project-item">
-                <h3>Calculator</h3>
-                    <img src="" alt="Calculator-Image"><br>
-                    <button class="github-link btn btn-light" onclick="location.href='http://www.example.com'" >
-                        View Code   <i class="fab fa-github fa-1x"></i>
-                    </button>    
-            </div>
-
-            <div class="project-item">
-                <h3>Calculator</h3>
-                    <img src="" alt="Calculator-Image"><br>
-                    <button class="github-link btn btn-light" onclick="location.href='http://www.example.com'" >
-                        View Code   <i class="fab fa-github fa-1x"></i>
-                    </button>    
-            </div>
-
-            <div class="project-item">
-                <h3>Calculator</h3>
-                <img src="" alt="Calculator-Image"><br>
-                <button class="github-link btn btn-light" onclick="location.href='http://www.example.com'" >
-                    View Code   <i class="fab fa-github fa-1x"></i>
-                </button>    
-            </div>
+      <h2>Projekte</h2>
+      <div class="project-list">
+        <div class="project-item">
+          <h3>Calculator</h3>
+          <img src="" alt="Calculator-Image" /><br />
+          <button
+            class="github-link btn btn-light"
+            onclick="location.href='http://www.example.com'"
+          >
+            View Code <i class="fab fa-github fa-1x"></i>
+          </button>
         </div>
+
+        <div class="project-item">
+          <h3>Calculator</h3>
+          <img src="" alt="Calculator-Image" /><br />
+          <button
+            class="github-link btn btn-light"
+            onclick="location.href='http://www.example.com'"
+          >
+            View Code <i class="fab fa-github fa-1x"></i>
+          </button>
+        </div>
+
+        <div class="project-item">
+          <h3>Calculator</h3>
+          <img src="" alt="Calculator-Image" /><br />
+          <button
+            class="github-link btn btn-light"
+            onclick="location.href='http://www.example.com'"
+          >
+            View Code <i class="fab fa-github fa-1x"></i>
+          </button>
+        </div>
+        <div class="project-item">
+          <h3>Calculator</h3>
+          <img src="" alt="Calculator-Image" /><br />
+          <button
+            class="github-link btn btn-light"
+            onclick="location.href='http://www.example.com'"
+          >
+            View Code <i class="fab fa-github fa-1x"></i>
+          </button>
+        </div>
+
+        <div class="project-item">
+          <h3>Calculator</h3>
+          <img src="" alt="Calculator-Image" /><br />
+          <button
+            class="github-link btn btn-light"
+            onclick="location.href='http://www.example.com'"
+          >
+            View Code <i class="fab fa-github fa-1x"></i>
+          </button>
+        </div>
+
+        <div class="project-item">
+          <h3>Calculator</h3>
+          <img src="" alt="Calculator-Image" /><br />
+          <button
+            class="github-link btn btn-light"
+            onclick="location.href='http://www.example.com'"
+          >
+            View Code <i class="fab fa-github fa-1x"></i>
+          </button>
+        </div>
+      </div>
     </section>
 
     <!-- Tech Stack -->
     <section class="skills" id="skills">
-        <h2>Skills</h2>
-        <ul class="skills-list">
-            <li class="skills-item">
-                <i class="fab fa-python fa-10x"></i>
-                <span>Python</span>
-            </li>
-            <li class="skills-item">
-                <i class="fab fa-js fa-10x"></i>
-                <span>JavaScript</span>
-            </li>
-            <li class="skills-item">
-                <i class="fab fa-java fa-10x"></i>
-                <span>Java</span>
-            </li>
-            <li class="skills-item">
-                <i class="fab fa-git fa-10x"></i>
-                <span>Git</span>
-            </li>
-            <li class="skills-item">
-                <i class="fab fa-github fa-10x"></i>
-                <span>GitHub</span>
-            </li>
-            <li class="skills-item">
-                <i class="fab fa-jenkins fa-10x"></i>
-                <span>Jenkins</span>
-            </li>
-            <li class="skills-item">
-                <i class="fa fa-database fa-10x"></i>
-                <span>SQL</span>
-            </li>
-
-            
-        </ul>
-
-        <!-- Footer-->
-    <footer class="footer">
-        <p>Copyright © 2021 Hasan Öz</p>
-        <a class = "social-item"href="https://github.com/oezhasan" target="_blank">
-          <i class="fab fa-github"  ></i
-        ></a>
-        <a class = "social-item"href="https://github.com/oezhasan" target="_blank">
-            <i class="fab fa-linkedin"  ></i
-          ></a>
-    </footer>
+      <h2>Skills</h2>
+      <ul class="skills-list">
+        <li class="skills-item">
+          <i class="fab fa-python fa-10x"></i>
+          <span>Python</span>
+        </li>
+        <li class="skills-item">
+          <i class="fab fa-js fa-10x"></i>
+          <span>JavaScript</span>
+        </li>
+        <li class="skills-item">
+          <i class="fab fa-java fa-10x"></i>
+          <span>Java</span>
+        </li>
+        <li class="skills-item">
+          <i class="fab fa-git fa-10x"></i>
+          <span>Git</span>
+        </li>
+        <li class="skills-item">
+          <i class="fab fa-github fa-10x"></i>
+          <span>GitHub</span>
+        </li>
+        <li class="skills-item">
+          <i class="fab fa-jenkins fa-10x"></i>
+          <span>Jenkins</span>
+        </li>
+        <li class="skills-item">
+          <i class="fa fa-database fa-10x"></i>
+          <span>SQL</span>
+        </li>
+      </ul>
     </section>
 
-    
+    <!-- Contact form -->
+    <section class="skills" id="skills">
+      <h2>Contact</h2>
+
+      <!-- Footer-->
+      <footer class="footer">
+        <p>Copyright © 2021 Hasan Öz</p>
+        <a
+          class="social-item"
+          href="https://github.com/oezhasan"
+          target="_blank"
+        >
+          <i class="fab fa-github"></i
+        ></a>
+        <a
+          class="social-item"
+          href="https://github.com/oezhasan"
+          target="_blank"
+        >
+          <i class="fab fa-linkedin"></i
+        ></a>
+      </footer>
+    </section>
 
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
