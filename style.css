@@ -1,9 +1,7 @@
-* {
+*, *::before, *::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-}
-html {
 }
 
 :root {
@@ -14,8 +12,8 @@ html {
   --fw-bold: 900;
 
   --clr-light: #fff;
-  --clr-dark: #373737;
   --clr-black: #272727;
+  --clr-dark: #272727;
   --clr-accent: #00ff57;
 
   --fs-h1: 3rem;
@@ -34,7 +32,7 @@ html {
 }
 
 .dark-mode {
-  --clr-light: #303030;
+  --clr-light: #272727;
   --clr-dark: #fff;
 }
 
@@ -48,6 +46,8 @@ body {
   height: 100%;
   width: 100%;
   scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
 }
 .star-bg {
   width: 100vw;
@@ -246,6 +246,41 @@ footer {
 .social-item:hover {
   transform: rotate(360deg) scale(1.2);
   color: var(--clr-dark);
+}
+
+.contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+.contact-form{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 50%;
+    z-index: 1;
+
+}
+
+.contact-form > *{
+height: 2rem}
+.contact-form > input:focus{
+border: none;
+outline: none;
+}
+
+
+#desc-input{
+    height: 8rem;
+}
+
+.container-submit-button{
+    display: flex;
+    justify-content: flex-end;
+}
+#submit-btn{
+    border-bottom: 2px solid var(--clr-accent);   
 }
 
 #stars {

@@ -22,7 +22,7 @@
     <link rel="stylesheet" href="style.css" />
     <title>Document</title>
   </head>
-  <body>
+  <body class="dark-mode">
     <div class="star-bg">
       <div id="stars"></div>
       <div id="stars2"></div>
@@ -159,8 +159,18 @@
     </section>
 
     <!-- Contact form -->
-    <section class="skills" id="skills">
+    <section class="contact">
       <h2>Contact</h2>
+      
+      <form class="contact-form">
+        <input type="text" class="input" id="name-input" placeholder="name">
+        <input type="email" class="input" id="email-input" placeholder="email"> 
+        <textarea type="textarea" class="input" id="desc-input" placeholder="description"></textarea>
+        <div class="container-submit-button">
+        <button class="btn"id="submit-btn">Submit</button>
+      </div>
+      </form>
+
 
       <!-- Footer-->
       <footer class="footer">
