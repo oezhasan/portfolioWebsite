@@ -23,11 +23,6 @@
     <title>Document</title>
   </head>
   <body class="dark-mode">
-    <div class="star-bg">
-      <div id="stars"></div>
-      <div id="stars2"></div>
-      <div id="stars3"></div>
-    </div>
     <header>
       <nav class="nav">
         <div class="nav-links">
@@ -43,14 +38,18 @@
         </div>
       </nav>
     </header>
+    <div class="particles-js" id="particles-js"></div>
 
     <!-- Introduction -->
-    <section class="intro" id="home">
-      <h1 class="intro_title">Hasan Öz</h1>
+    <div class="intro" id=" home  ">
+      <h1 class="intro_title">
+        Hello, I'm <span style="color: var(--clr-accent)"> Hasan</span>.
+      </h1>
+
       <a id="arrow-down" class="btn">
         <i class="fas fa-arrow-down fa-7x"></i>
       </a>
-    </section>
+    </div>
 
     <!-- Projects -->
     <section class="projects" id="projects">
@@ -161,16 +160,25 @@
     <!-- Contact form -->
     <section class="contact">
       <h2>Contact</h2>
-      
-      <form class="contact-form">
-        <input type="text" class="input" id="name-input" placeholder="name">
-        <input type="email" class="input" id="email-input" placeholder="email"> 
-        <textarea type="textarea" class="input" id="desc-input" placeholder="description"></textarea>
-        <div class="container-submit-button">
-        <button class="btn"id="submit-btn">Submit</button>
-      </div>
-      </form>
 
+      <form class="contact-form">
+        <input type="text" class="input" id="name-input" placeholder="name" />
+        <input
+          type="email"
+          class="input"
+          id="email-input"
+          placeholder="email"
+        />
+        <textarea
+          type="textarea"
+          class="input"
+          id="desc-input"
+          placeholder="description"
+        ></textarea>
+        <div class="container-submit-button">
+          <button class="btn" id="submit-btn">Submit</button>
+        </div>
+      </form>
 
       <!-- Footer-->
       <footer class="footer">
@@ -191,7 +199,7 @@
         ></a>
       </footer>
     </section>
-
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <script src="script.js"></script>
   </body>
 </html>

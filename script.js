@@ -2,7 +2,10 @@ const navLinks = document.querySelectorAll(".nav-link");
 const sections = document.querySelectorAll("section");
 const darkMode = document.querySelector("#toggle-darkmode");
 
-console.log(sections);
+particlesJS.load("particles-js", "particles.json", function () {
+  console.log("callback - particles.js config loaded");
+});
+
 navLinksArray = Array.from(navLinks);
 sectionsArray = Array.from(sections);
 
